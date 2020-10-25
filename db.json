@@ -1,0 +1,31 @@
+{
+    "products": [{
+            "id": 1001,
+            "productName": "iPhone 7s",
+            "productPrice": 39999,
+            "productImg": "iphone.jpg",
+            "productBrand": "Apple"
+        },
+        {
+            "id": 1002,
+            "productName": "Nokia 8",
+            "productPrice": 24499,
+            "productImg": "nokiasmartphone.png",
+            "productBrand": "Nokia"
+        },
+        {
+            "id": 1003,
+            "productName": "Redmi Note 8 Pro",
+            "productPrice": 17799,
+            "productImg": "redminote.png",
+            "productBrand": "Xiaomi"
+        },
+        {
+            "id": 1004,
+            "productName": "Samsung Galaxy s10",
+            "productPrice": 42999,
+            "productImg": "samsunggalaxy.jpg",
+            "productBrand": "Samsung"
+        }
+    ]
+}

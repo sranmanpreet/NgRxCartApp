@@ -1,0 +1,28 @@
+<div class="container text-center">
+    <div class="row mt-5" *ngIf="cartItems.length">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow text-center" style="font-family: cursive;">
+                <div class="card-body">
+                    <h1>~~~Your cart details~~~</h1>
+                    <table class='table'>
+                        <tr>
+                            <th>Product Id</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr *ngFor="let item of cartItems; let i = index">
+                            <td (click)="deleteCartItem(i)"><a href="javascript:void(0)" matTooltip="Delete Item">{{item.productId}}</a></td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.price}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p *ngIf="!cartItems.length">Cart is empty.</p>
+    <div class="button-container text-center">
+        <button class="go-to-products-button" routerLink='/products'>Go to  Products</button>
+    </div>
+</div>

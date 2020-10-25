@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row mt-4 text-center" style="font-family: cursive;" *ngIf="products.length">
+        <div class="col-md-3" *ngFor="let p of products">
+            <div class="card shadow">
+                <img class="product-image" src="assets/{{p.productImg}}" alt="{{p.productName}}" srcset="">
+                <div class="card-body">
+                    <h1 class="product-name">{{p.productName}}</h1>
+                    <p class="product-brand">Brand: {{p.productBrand}}</p>
+                    <p class="product-price">Price: {{p.productPrice}}</p>
+
+                    <button class="add-to-cart-button" (click)="addProduct(p)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container text-center">
+        <button class="go-to-cart-butto" routerLink='/cart'>Go to  Cart</button>
+    </div>
+</div>

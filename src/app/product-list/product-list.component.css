@@ -1,0 +1,11 @@
+.product-image {
+    max-height: 200px;
+}
+
+.product-name {
+    font-size: 1.4rem;
+}
+
+.button-container {
+    margin: 4vh 0;
+}
